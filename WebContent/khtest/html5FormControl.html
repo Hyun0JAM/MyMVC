@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>test</title>
+</head>
+<body>
+<div id="container">
+<div id="content"> 
+<form>
+	<fieldset>
+		<legend align="left">납품자정보</legend>
+		<ol style="list-style-type: decimal-leading-zero;">
+			<li>
+			    <label for="name">납품자명:</label>
+			    <input type="text" placeholder="성명" name="name" required>
+			</li>
+			<li>
+			    <label for="email">email:</label>
+				<input type="email" placeholder="abc@def.com" name="email" required>
+			</li>
+			<li>
+			    <label for="website">홈페이지:</label>
+				<input type="url" placeholder="http://" name="website" required>
+			</li>
+		</ol>
+	</fieldset>
+	<fieldset style="margin-top: 5%;">
+		<legend align="left">납품정보</legend>
+		<ul style="list-style-type: disc;">
+			<li>
+			    <label for="goodirum">상품명:</label>
+				<input type="text" name="goodirum" list="goodlist">
+				<datalist id="goodlist">
+					<option value="dog1004">도그1004</option>
+					<option value="catchicken">고양이치킨</option>
+					<option value="milk">우유</option>
+				</datalist>
+			</li>
+			<li>
+				<label for="number">납품수량:</label>
+				<input type="number" name="number" min="10" max="1000000" step="10" placeholder="최소10이상">
+			</li>
+			<li>
+				<label for="range">납품등급:</label>
+				<input type="range" name="range" min="0" max="10" value="4" step="2">
+			</li>
+			<li>
+				<label for="message">기타사항:</label>
+				<textarea name="message" cols="30" rows="5" required></textarea>
+			</li>
+		</ul>
+	</fieldset>
+	<div style="margin-top: 4%;">
+	<button type="submit">send message</button>
+	</div>
+</form>
+</div>
+</div> 
+</body>
+</html>
